@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMXCS3.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="VENTANA DE REGISTRO" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="16"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

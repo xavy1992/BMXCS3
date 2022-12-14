@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMXCS3.login">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="BIENVENIDO AL SISTEMA!" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Image Source="https://pbs.twimg.com/profile_images/407069603/LOGO_400x400.JPG"/>
+            <Image Source="logo.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO" FontSize="18" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingese Usuario" Grid.Row="0" Grid.Column="1"  />
+                <Label Text="Contraseña" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+
+
+            </Grid>
+            <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
