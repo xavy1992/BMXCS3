@@ -17,5 +17,10 @@ namespace BMXCS3
             InitializeComponent();
             lblUsuario.Text = usuario;
         }
+
+        private void btnSiguiente_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Calcular());
+        }
     }
 }

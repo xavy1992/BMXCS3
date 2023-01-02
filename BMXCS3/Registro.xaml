@@ -7,6 +7,8 @@
             <Label Text="VENTANA DE REGISTRO" FontSize="20" HorizontalTextAlignment="Center"/>
             <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="16"/>
 
+            <Button x:Name="btnSiguiente" Text="SIGUIENTE" Clicked="btnSiguiente_Clicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMXCS3.Calcular">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="SEMANA DOS APP MOVILES!" FontSize="14" TextColor="Blue" HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="txtDatoUno" Placeholder="Ingresar Nota Seguimiento" Keyboard="Numeric" TextChanged="txtDatoUno_TextChanged" />
+                <Entry x:Name="txtDatoDos" Placeholder="Ingresar Nota Examen" Keyboard="Numeric" TextChanged="txtDatoDos_TextChanged"/>
+
+                <Entry x:Name="txtResultado" Placeholder="Nota Parcial" IsEnabled="False"/>
+
+
+                <Entry x:Name="txtDatoUnoo" Placeholder="Ingresar Nota Seguimiento 2" Keyboard="Numeric" TextChanged="txtDatoUnoo_TextChanged"/>
+                <Entry x:Name="txtDatoDoss" Placeholder="Ingresar Nota Examen 2" Keyboard="Numeric" TextChanged="txtDatoDoss_TextChanged"/>
+
+                <Entry x:Name="txtResultadoo" Placeholder="Nota Parcial 2" IsEnabled="False"/>
+
+                <Entry x:Name="txtResultadoFinal" Placeholder="NOTA FINAL" IsEnabled="False"/>
+                <Entry x:Name="txtVerificar" Placeholder="Verificar" IsEnabled="False"/>
+
+                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
