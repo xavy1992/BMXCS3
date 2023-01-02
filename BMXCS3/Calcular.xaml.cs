@@ -41,7 +41,7 @@ namespace BMXCS3
 
                 // mostramos este mensaje
                 txtVerificar.Text = ("Aprobado");
-
+                DisplayAlert("Felicitaciones", " Su nota final es:" + " " + OperacionFin, "cerrar");
 
             }
 
@@ -50,7 +50,7 @@ namespace BMXCS3
 
                 // Mostramos otro mensaje
                 txtVerificar.Text = ("Complementario");
-                //DisplayAlert("Examen Complementario", " Su nota final es:" + " " + OperacionFin, "cerrar");
+                DisplayAlert("Examen Complementario", " Su nota final es:" + " " + OperacionFin, "cerrar");
             }
 
             if (OperacionFin <= 4.9 && OperacionFin >= 0.1)
@@ -58,7 +58,7 @@ namespace BMXCS3
 
                 // Mostramos otro mensaje
                 txtVerificar.Text = ("Reprobado");
-                // DisplayAlert("Reprobado", "Su nota final es:" + " " + OperacionFin, "cerrar");
+                 DisplayAlert("Reprobado", "Su nota final es:" + " " + OperacionFin, "cerrar");
             }
         }
                 private void txtDatoUno_TextChanged(object sender, TextChangedEventArgs e)
